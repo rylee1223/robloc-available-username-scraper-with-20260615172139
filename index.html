@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robl​oc Username Scraper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Robl​oc Username Scraper</h1>
+        <p>Generate and check the availability of usernames with custom keywords.</p>
+    </header>
+
+    <main class="container">
+        <section class="input-section">
+            <form id="scrapeForm" novalidate>
+                <div class="form-group">
+                    <label for="baseUsername">Base Username</label>
+                    <input type="text" id="baseUsername" name="baseUsername" placeholder="e.g., robloc" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="keywords">Keywords (comma‑separated)</label>
+                    <input type="text" id="keywords" name="keywords" placeholder="e.g., dev,2024,pro">
+                </div>
+
+                <button type="submit" class="btn-primary">Check Availability</button>
+            </form>
+        </section>
+
+        <section class="results-section" id="resultsSection" hidden>
+            <h2>Results</h2>
+            <div id="loader" class="loader" hidden></div>
+            <ul class="results-list" id="resultsList"></ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Robl​oc Tools – All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
